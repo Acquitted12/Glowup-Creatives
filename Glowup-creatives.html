@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowUp Creatives</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <style>
+    
+.contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 4rem 2rem;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .illustration {
+      flex: 1 1 350px;
+      text-align: center;
+    }
+
+    .illustration img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .contact-details {
+      flex: 1 1 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .contact-title {
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      color: #777;
+      font-weight: 600;
+    }
+
+    .contact-heading {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1e1e2f;
+      margin-bottom: 1rem;
+    }
+
+    .info-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .info-box {
+      flex: 1 1 160px;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .info-box i {
+      font-size: 2rem;
+      background: #ff69b4;
+      color: white;
+      border-radius: 50%;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+    }
+
+    .info-box h3 {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+      font-weight: 600;
+    }
+
+    .info-box p {
+      font-size: 0.9rem;
+      color: #555;
+      margin: 0;
+    }
+
+    .chat-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 0.5rem;
+    }
+
+    .chat-icons i {
+      font-size: 1.3rem;
+      color: #ff69b4;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+
+      .info-boxes {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="logo">GlowUp Creatives</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#filters">Portfolio</a>
+      <a href="#contact-section">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Background Video -->
+  <section class="video-bg" id="home">
+    <video autoplay muted loop style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>We Don’t Just Grow Brands — We <span>Glow</span> Them Up</h1>
+      <p>Creative strategies that elevate your brand presence.</p><br />
+      <a href="#contact-section" class="btn">Let's Work Together</a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>GlowUp Creatives is a forward-thinking agency that blends design, storytelling, and digital wizardry to make brands unforgettable.</p>
+    <p>We believe in bold ideas, bold colors, and even bolder results.</p>
+    <p>Founded with a passion for innovation and a commitment to excellence, our team combines creativity with strategy to deliver bespoke branding, compelling content, and cutting-edge web design. We work closely with clients to understand their unique voice and vision, ensuring every project shines with authenticity and impact.</p>
+    <p>At GlowUp Creatives, collaboration, integrity, and growth are at the heart of everything we do. Whether you're a startup or an established business, we're dedicated to helping you glow brighter in a crowded marketplace.</p>
+    <p>Meet our diverse team of designers, storytellers, and strategists who bring energy and expertise to every project — turning ideas into vibrant realities.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="service">
+        <img src="./branding.webp" alt="Branding Icon" />
+        <h3>Branding</h3>
+        <p>Crafting memorable identities that glow on every platform.</p>
+      </div>
+      <div class="service">
+        <img src="./web2.jpg" alt="Web Design Icon" />
+        <h3>Web Design</h3>
+        <p>Responsive and modern websites tailored to your brand.</p>
+      </div>
+      <div class="service">
+        <img src="./content.webp" alt="Content Icon" />
+        <h3>Content Creation</h3>
+        <p>From reels to real impact, we produce content that converts.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <!-- Our Work -->
+  <section>
+    <h2>Our Work</h2>
+
+    <div class="filters" id="filters">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="web">Web Design</button>
+      <button data-filter="branding">Branding</button>
+      <button data-filter="app">Mobile App</button>
+    </div>
+
+    <div class="work-gallery">
+      <div class="work-item" data-category="branding">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Branding" />
+        <div class="work-content">
+          <h3>GlowUp Rebranding</h3>
+          <p>New visual identity with soft pinks and modern typography.</p>
+        </div>
+      </div>
+
+      <div class="work-item" data-category="web">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Web Design" />
+        <div class="work-content">
+          <h3>Minimal E-Commerce</h3>
+          <p>Fashion store redesigned for simplicity and performance.</p>
+        </div>
+      </div>
+
+      <div class="work-item" data-category="app">
+        <img src="./ui.webp" alt="App" />
+        <div class="work-content">
+          <h3>Fitness App UX</h3>
+          <p>Clean, motivating mobile experience for health tracking.</p>
+        </div>
+      </div>
+
+      <div class="work-item" data-category="web">
+        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=600&q=80" alt="Photography" />
+        <div class="work-content">
+          <h3>Photo Portfolio</h3>
+          <p>Fullscreen gallery site for a landscape photographer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="workModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">×</span>
+      <img id="modalImage" src="" alt="" />
+      <h3 id="modalTitle">Title</h3>
+      <p id="modalDesc">Description</p>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial">
+        <p>“GlowUp Creatives completely transformed our brand identity! We get compliments every day.”</p>
+        <p class="client">– Lindiwe M., Luxe Skincare</p>
+        <p class="stars">★★★★★</p>
+      </div>
+      <div class="testimonial">
+        <p>“They delivered our site early, and it was better than we imagined. The UI is super clean!”</p>
+        <p class="client">– Thabo N., Urban Print Studio</p>
+        <p class="stars">★★★★★</p>
+      </div>
+      <div class="testimonial">
+        <p>“Professional, friendly and reliable team. I highly recommend them for branding and design.”</p>
+        <p class="client">– Zanele D., Blush Boutique</p>
+        <p class="stars">★★★★☆</p>
+      </div>
+    </div>
+  </section>
+
+   <!-- Contact Form Section -->
+  <section class="contact-section" id="contact-section">
+    <div class="illustration">
+      <img src="./service1.jpeg" alt="Contact Illustration">
+    </div>
+
+    <div class="contact-details" id="contact">
+      <div class="contact-title">Contact Us</div>
+      <div class="contact-heading">Write To Us & Build</div>
+
+      <div class="info-boxes">
+        <div class="info-box">
+          <i class="material-icons">place</i>
+          <h3>We’re here</h3>
+          
+          <p>Hatfield Plaza 1122 Burnett St Hatfield<br> Pretoria 0028</p>
+        </div>
+
+        <div class="info-box">
+          <i class="material-icons">call</i>
+          <h3>Talk to us</h3>
+          <p>+1 (234) 567-890</p>
+        </div>
+
+        <div class="info-box">
+          <i class="material-icons">chat</i>
+          <h3>Chat with us</h3>
+          <div class="chat-icons">
+            <i class="material-icons">whatsapp</i>
+            <i class="material-icons">facebook</i>
+            <i class="material-icons">alternate_email</i>
+          </div>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">⬆</button>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 GlowUp Creatives. All rights reserved.</p>
+    <p>
+      Contact us:
+      <a href="mailto:info@glowupcreatives.com">info@glowupcreatives.com</a> |
+      <a href="tel:+1234567890">+1 (234) 567-890</a>
+    </p>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook">Facebook</a> |
+      <a href="#" aria-label="Twitter">Twitter</a> |
+      <a href="#" aria-label="Instagram">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
